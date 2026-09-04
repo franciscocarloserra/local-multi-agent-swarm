@@ -1,0 +1,29 @@
+<!doctype html><meta charset="utf-8"><title>multiagents-flat</title>
+<link rel="stylesheet" href="ui/style.css">
+<header id="top">
+  <section class="pane" id="goalpane"><h2><span class="ico">🎯</span> Goal</h2><div class="row"><textarea id="goal" rows="2"></textarea><button class="go" id="runb">▶ new</button><button id="pauseb">⏸ pause</button><button id="contb">▶ continue</button></div><div id="msgline"></div></section>
+  <section class="pane" id="ctlpane"><h2><span class="ico">🎛</span> Runs</h2>
+    <div class="row"><select id="exp"></select><select id="topo" title="topology"></select><select id="engine" title="inference engine"></select></div>
+    <details class="dd" id="stats"><summary>Run stats</summary><div id="hdr"></div></details>
+  </section>
+</header>
+<div id="gutA" class="gut v"></div><div id="gutB" class="gut v"></div><div id="gutL" class="gut h"></div><div id="gutR" class="gut h"></div>
+<aside id="left">
+  <section class="pane" id="agentpane"><h2 id="agenth"><span class="ico">🔍</span> Inspect</h2>
+    <div id="inject" class="row" hidden><input id="a_task" placeholder="message (delivered labeled as USER, answered immediately; on the control loop it goes to root)"><button id="sendb">send</button><button id="spawnb" hidden>spawn</button><button id="killb" class="danger" hidden>kill</button></div>
+    <div id="agentbox" class="scroll"><div id="seltask"></div><div id="loopcfg" hidden></div><div id="chat"></div><div id="actions"></div></div>
+  </section>
+  <section class="pane" id="logpane"><h2><span class="ico">📜</span> General log</h2>
+    <div class="row"><input id="q" placeholder="search"><details class="dd"><summary>Filters</summary><div id="filters"></div></details></div>
+    <div id="logbox" class="scroll"><div id="log"></div></div>
+    <details id="cfgd" class="dd"><summary>Prompts &amp; knobs</summary><div id="cfgbody"></div></details>
+  </section>
+</aside>
+<main id="center">
+  <section class="pane" id="graphpane"><h2><span class="ico">🕸</span> Agents <button id="fitb" class="mini">fit</button></h2><div id="graph"><svg id="svg"><g id="vp"></g></svg></div></section>
+</main>
+<aside id="right">
+  <section class="pane" id="rtpane"><h2><span class="ico">💻</span> Runtime </h2><div id="rt"></div></section>
+  <section class="pane" id="fspane"><h2><span class="ico">📄</span> File system</h2><div id="treemap"></div><div id="fslog" class="scroll"></div></section>
+</aside>
+<script type="module" src="ui/app.js"></script>

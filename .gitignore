@@ -1,0 +1,10 @@
+experiments/
+todelete/
+__pycache__/
+USER_STYLE.md
+events.jsonl
+state.json
+raw.jsonl
+docs/*.png
+!docs/screenshot.png
+todelete/
