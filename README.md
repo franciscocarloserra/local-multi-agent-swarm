@@ -2,7 +2,8 @@
 
 Watch a swarm of LLM agents run on your own machine, explore different swarm topologies, and nudge or redirect any agent in real time.
 
-![panel](docs/screenshot.png)
+https://github.com/user-attachments/assets/c8918e8a-4dda-4516-9b02-11aa8094d67c
+
 
 ## Why
 
