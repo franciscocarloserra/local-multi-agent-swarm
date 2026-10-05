@@ -1,4 +1,4 @@
-# Local Multi-Agent Swarm
+# Toy Local Multi-Agent Swarm
 
 Watch a swarm of LLM agents run on your own machine, explore different swarm topologies, and nudge or redirect any agent in real time.
 
